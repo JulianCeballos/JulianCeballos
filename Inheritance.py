@@ -92,3 +92,18 @@ print(cat1)
 print(cat1.chasing_rats())
 
 #print(p1.chasing_rats()) # This line will give us an error. The Pet class doesn't have this method!
+
+class Cheshire(Cat): # this inherits from Cat, which inherits from Pet
+
+    def smile(self): # this method is specific to instances of Cheshire
+        print(":D :D :D")
+
+
+new_cat = Cheshire("Cat1")
+class Siamese(Cat):
+  def song(self):
+    print("I am a purrrfect creature.")
+another_cat = Siamese("Cat2")
+
+
+print(another_cat.song())
